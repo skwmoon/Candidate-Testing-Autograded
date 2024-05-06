@@ -18,13 +18,13 @@ let candidateAnswers;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
- candidateName = input.askForName('Please enter name.');
+ candidateName = readlineSync.askForName('Please enter name.');
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-question = input.askQuestion('Who was the first American woman in space?')
-
+question = readlineSync.askQuestion('Who was the first American woman in space? ')
+correctAnswer = readlineSync.correctAnswer('Sally Ride')
 }
 
 function gradeQuiz(candidateAnswers) {
